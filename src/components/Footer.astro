@@ -1,0 +1,95 @@
+---
+
+---
+
+<footer class="footer">
+    <div class="contenedor contenido">
+        <nav class="navegacion">
+                <a  href="/"  >    
+                    Home 
+                </a>
+                <a  href="/about" >
+                    Nosotros 
+                </a>
+                <a  href="/tienda" >
+                    Tienda 
+                </a>
+                <a  href="/blog" >
+                    Blog 
+                </a>
+    
+        </nav>
+        <p class="copyright">
+            Todos los derechos reservados {new Date().getFullYear()}
+        </p>
+    </div>
+</footer>
+
+<style>
+.footer {
+    background-color: var(--black);
+    padding: 5rem 0;
+    margin-top: 5rem;
+    
+}
+
+@media (min-width:768px) {
+    .contenido {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+.navegacion a{
+display: inline-flex; 
+padding-top: 0.625rem;
+padding-bottom: 0.625rem; 
+padding-left: 1.25rem;
+padding-right: 1.25rem; 
+flex-direction: row; 
+column-gap: 0.5rem; 
+justify-content: center; 
+align-items: center; 
+border-radius: 0.5rem; 
+font-weight: 500; 
+text-align: center; 
+color: #ffffff; 
+text-transform: uppercase; 
+cursor: pointer; 
+opacity: 0.9; 
+}
+
+.copyright{
+display: inline-flex; 
+padding-top: 0.625rem;
+padding-bottom: 0.625rem; 
+padding-left: 1.25rem;
+padding-right: 1.25rem; 
+margin-right: 0.5rem; 
+margin-bottom: 0.5rem; 
+flex-direction: row; 
+column-gap: 0.5rem; 
+justify-content: center; 
+align-items: center; 
+border-radius: 0.5rem; 
+font-weight: 500; 
+text-align: center; 
+color: #ffffff; 
+text-transform: uppercase; 
+opacity: 0.9;
+order: 2;
+ 
+}
+
+</style>
